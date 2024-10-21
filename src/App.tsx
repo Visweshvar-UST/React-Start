@@ -1,30 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
-// import Viswa from './viswa.jpg';
-import './App.css';
-import './components/About'
-import About from './components/About';
-import { Routes, Route } from 'react-router-dom';
-import NavBar from './components/NavBar';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import NavBar from './componenets/NavBar';
+import About from './componenets/About';
+import Courses from './componenets/Course';
+import Contact from './componenets/Contact';
 
-function App() {
+
+
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-      {/* <NavBar /> */}
+    <div>
+      <NavBar />
       <Routes>
         <Route path="/" element={<h1>Welcome to MST Technological!</h1>} />
         <Route path="/about" element={<About />} />
-        <Route path="/courses" element={<Projects />} />
+        <Route path="/courses" element={<Courses />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-      <img src={`${process.env.PUBLIC_URL}/viswa.jpg`} width={100} style={{ borderRadius: '50%' }}  alt="viswa" />
-        <About/>
-      </header>
     </div>
   );
-}
+};
 
 export default App;

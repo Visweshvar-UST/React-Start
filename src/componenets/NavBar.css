@@ -1,0 +1,30 @@
+/* NavBar.css */
+header {
+    background-color: #282c34; /* Dark background */
+    padding: 1rem; /* Padding around the nav */
+  }
+  
+  nav {
+    display: flex; /* Use flexbox for layout */
+  }
+  
+  ul {
+    list-style-type: none; /* Remove default list styles */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Make the list horizontal */
+  }
+  
+  li {
+    margin-right: 20px; /* Space between items */
+  }
+  
+  a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  a:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  
